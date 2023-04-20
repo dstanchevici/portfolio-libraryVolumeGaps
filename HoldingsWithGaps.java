@@ -1,3 +1,14 @@
+// This program finds gaps in volume numbers in journals from a library spreasheet.
+// The program:
+//   1. Reads data from a .txt file listing journal ids and holdings
+//   2. Parses each holding to identify volume numbers associated with the id.
+//   3. Finds holdings with gaps and records where the gaps occur.
+//   4. Writes to a idsWithGaps.txt file on separate lines:
+//      ids of holdings with gaps and vol numbers between which gaps occur.
+//      Each id is separated from numbers with gaps writh a tab.
+//      Example: "991026273406676	10-23, 23-39, 39-41, 41-44, 44-54"
+
+
 import java.io.File;  // Import the File class
 import java.io.FileWriter;
 import java.io.FileNotFoundException;  // Import this class to handle errors
