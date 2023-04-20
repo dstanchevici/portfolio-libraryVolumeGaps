@@ -145,7 +145,7 @@ public class HoldingsWithGaps {
     static void writeToFile (String data)
     {
 	try {
-	    FileWriter myWriter = new FileWriter("idsAndGaps.txt");
+	    FileWriter myWriter = new FileWriter("idsWithGaps.txt");
 	    myWriter.write (data);
 	    myWriter.close ();
 	} catch (IOException e) {
